@@ -172,7 +172,7 @@ class _CustomPopupMenuState extends State<CustomPopupMenu> {
       },
     );
     if (_overlayEntry != null) {
-      Overlay.of(context)!.insert(_overlayEntry!);
+      Overlay.maybeOf(context, rootOverlay: true)!.insert(_overlayEntry!);
     }
   }
 
